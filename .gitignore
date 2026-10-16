@@ -1,9 +1,11 @@
-.env
-**/.env
+.env*
+**/.env*
 .venv/
 __pycache__/
 **/__pycache__/
 ablation_cache/
+scratch/
+cache/
 *.trace.json
 results/
 *.pyc
@@ -11,3 +13,4 @@ results/
 *.log
 *.zip
 AI_Researcher_R1_Submission.zip
+

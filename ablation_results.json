@@ -1,79 +1,79 @@
 {
  "full|1x": [
   {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
+   "macro": 0.2667,
    "unique": 0.2,
    "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
-   "ambiguous": 0.2,
    "inconsistent": 0.35,
    "confusion": {
     "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "ambiguous": {
      "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
      "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
      "unparsed": 0
     }
    }
@@ -81,79 +81,79 @@
  ],
  "full|3x": [
   {
-   "macro": 0.3167,
+   "macro": 0.2833,
    "unique": 0.3,
-   "ambiguous": 0.3,
+   "ambiguous": 0.2,
    "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
+     "ambiguous": 7,
+     "inconsistent": 7,
      "unparsed": 0
     },
     "ambiguous": {
-     "unique": 0,
-     "ambiguous": 18,
-     "inconsistent": 2,
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
-     "unique": 4,
-     "ambiguous": 6,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2833,
-   "unique": 0.2,
-   "ambiguous": 0.15,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 15,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 3,
+     "unique": 3,
+     "ambiguous": 4,
      "inconsistent": 13,
      "unparsed": 0
     }
    }
   },
   {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.3,
-   "inconsistent": 0.45,
+   "macro": 0.2833,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
+     "ambiguous": 6,
+     "inconsistent": 7,
      "unparsed": 0
     },
     "ambiguous": {
      "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
      "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.2833,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 6,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
      "unparsed": 0
     }
    }
@@ -161,245 +161,31 @@
  ],
  "full|10x": [
   {
-   "macro": 0.3167,
-   "unique": 0.3,
-   "ambiguous": 0.25,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 12,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 6,
-     "inconsistent": 11,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.25,
-   "unique": 0.2,
-   "ambiguous": 0.05,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 5,
-     "ambiguous": 2,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.25,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 4,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- regex slot repair|1x": [
-  {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
    "macro": 0.2667,
    "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.35,
+   "ambiguous": 0.25,
+   "inconsistent": 0.3,
    "confusion": {
     "unique": {
      "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- regex slot repair|3x": [
-  {
-   "macro": 0.3167,
-   "unique": 0.3,
-   "ambiguous": 0.3,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 12,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 0,
-     "ambiguous": 18,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
      "ambiguous": 6,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2833,
-   "unique": 0.2,
-   "ambiguous": 0.15,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "ambiguous": {
-     "unique": 1,
-     "ambiguous": 15,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 3,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.3,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
      "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
+     "ambiguous": 2,
+     "inconsistent": 15,
      "unparsed": 0
     }
    }
-  }
- ],
- "- regex slot repair|10x": [
+  },
   {
    "macro": 0.3,
    "unique": 0.25,
@@ -407,195 +193,9 @@
    "inconsistent": 0.4,
    "confusion": {
     "unique": {
-     "unique": 5,
-     "ambiguous": 13,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 6,
-     "inconsistent": 11,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.25,
-   "unique": 0.2,
-   "ambiguous": 0.05,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
      "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 5,
-     "ambiguous": 2,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.25,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 4,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- grounding check|1x": [
-  {
-   "macro": 0.25,
-   "unique": 0.2,
-   "ambiguous": 0.15,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 4,
-     "ambiguous": 11,
-     "inconsistent": 5,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 15,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.25,
-   "unique": 0.1,
-   "ambiguous": 0.2,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 4,
-     "ambiguous": 10,
-     "inconsistent": 6,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 15,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 2,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2333,
-   "unique": 0.2,
-   "ambiguous": 0.15,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 11,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 2,
      "ambiguous": 6,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- grounding check|3x": [
-  {
-   "macro": 0.25,
-   "unique": 0.25,
-   "ambiguous": 0.15,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 11,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 2,
-     "ambiguous": 14,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 5,
-     "inconsistent": 11,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2333,
-   "unique": 0.15,
-   "ambiguous": 0.05,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 10,
-     "inconsistent": 5,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "ambiguous": {
@@ -605,77 +205,103 @@
      "unparsed": 0
     },
     "inconsistent": {
-     "unique": 4,
+     "unique": 3,
      "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3333,
+   "unique": 0.35,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- regex slot repair|1x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
      "inconsistent": 15,
      "unparsed": 0
     }
    }
   },
   {
-   "macro": 0.2833,
-   "unique": 0.2,
-   "ambiguous": 0.2,
-   "inconsistent": 0.45,
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
    "confusion": {
     "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "ambiguous": {
      "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- grounding check|10x": [
-  {
-   "macro": 0.3,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 5,
      "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 3,
-     "ambiguous": 15,
-     "inconsistent": 2,
+     "inconsistent": 7,
      "unparsed": 0
     },
     "inconsistent": {
      "unique": 3,
-     "ambiguous": 4,
-     "inconsistent": 13,
+     "ambiguous": 2,
+     "inconsistent": 15,
      "unparsed": 0
     }
    }
   },
   {
-   "macro": 0.2333,
-   "unique": 0.15,
-   "ambiguous": 0.05,
-   "inconsistent": 0.5,
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
-     "unique": 4,
-     "ambiguous": 11,
-     "inconsistent": 5,
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "ambiguous": {
@@ -685,269 +311,31 @@
      "unparsed": 0
     },
     "inconsistent": {
-     "unique": 4,
-     "ambiguous": 1,
-     "inconsistent": 15,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.2,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "+ distractor filter|1x": [
-  {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
      "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
      "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "+ distractor filter|3x": [
-  {
-   "macro": 0.3167,
-   "unique": 0.3,
-   "ambiguous": 0.3,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 0,
-     "ambiguous": 18,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 6,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2833,
-   "unique": 0.2,
-   "ambiguous": 0.15,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 15,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 3,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.3,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
      "inconsistent": 12,
      "unparsed": 0
     }
    }
   }
  ],
- "+ distractor filter|10x": [
+ "- regex slot repair|3x": [
   {
-   "macro": 0.3167,
+   "macro": 0.2833,
    "unique": 0.3,
-   "ambiguous": 0.25,
-   "inconsistent": 0.4,
+   "ambiguous": 0.2,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 6,
-     "ambiguous": 12,
-     "inconsistent": 2,
+     "ambiguous": 7,
+     "inconsistent": 7,
      "unparsed": 0
     },
     "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 6,
-     "inconsistent": 11,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.25,
-   "unique": 0.2,
-   "ambiguous": 0.05,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 5,
-     "ambiguous": 2,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.25,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
@@ -957,345 +345,157 @@
      "unparsed": 0
     }
    }
-  }
- ],
- "aggregate = first|1x": [
+  },
   {
    "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
+   "unique": 0.3,
    "ambiguous": 0.2,
    "inconsistent": 0.35,
    "confusion": {
     "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "aggregate = first|3x": [
-  {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "aggregate = first|10x": [
-  {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "aggregate = union|1x": [
-  {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "aggregate = union|3x": [
-  {
-   "macro": 0.3167,
-   "unique": 0.25,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 10,
-     "inconsistent": 5,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 0,
-     "ambiguous": 13,
+     "unique": 7,
+     "ambiguous": 6,
      "inconsistent": 7,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.2833,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 6,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- regex slot repair|10x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.3,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 6,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 6,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 10,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3333,
+   "unique": 0.35,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 4,
+     "ambiguous": 1,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- grounding check|1x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.2,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 6,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 10,
+     "inconsistent": 9,
      "unparsed": 0
     },
     "inconsistent": {
@@ -1308,19 +508,393 @@
   },
   {
    "macro": 0.3167,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.45,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 4,
+     "inconsistent": 10,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 1,
+     "inconsistent": 17,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3333,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- grounding check|3x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.3,
+   "ambiguous": 0.15,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 6,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 2,
+     "ambiguous": 9,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 2,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 0,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.2667,
    "unique": 0.2,
    "ambiguous": 0.25,
-   "inconsistent": 0.5,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 4,
+     "ambiguous": 5,
+     "inconsistent": 11,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 0,
+     "inconsistent": 17,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- grounding check|10x": [
+  {
+   "macro": 0.2333,
+   "unique": 0.25,
+   "ambiguous": 0.15,
+   "inconsistent": 0.3,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 5,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 2,
+     "ambiguous": 8,
+     "inconsistent": 10,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3,
+   "unique": 0.25,
+   "ambiguous": 0.2,
+   "inconsistent": 0.45,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 5,
+     "inconsistent": 10,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
      "ambiguous": 9,
+     "inconsistent": 10,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 0,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3333,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 4,
+     "inconsistent": 10,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 0,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "+ distractor filter|1x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3333,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 14,
+     "inconsistent": 5,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "+ distractor filter|3x": [
+  {
+   "macro": 0.2833,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 7,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 4,
+     "inconsistent": 13,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.2833,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 6,
      "inconsistent": 7,
      "unparsed": 0
     },
     "ambiguous": {
      "unique": 1,
      "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 6,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "+ distractor filter|10x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.3,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 6,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 2,
+     "ambiguous": 10,
      "inconsistent": 8,
      "unparsed": 0
     },
@@ -1334,13 +908,39 @@
   },
   {
    "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.2,
-   "inconsistent": 0.5,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
    "confusion": {
     "unique": {
-     "unique": 4,
-     "ambiguous": 8,
+     "unique": 6,
+     "ambiguous": 6,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 10,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
+     "inconsistent": 16,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3333,
+   "unique": 0.35,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
      "inconsistent": 8,
      "unparsed": 0
     },
@@ -1352,30 +952,376 @@
     },
     "inconsistent": {
      "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
+     "ambiguous": 1,
+     "inconsistent": 16,
      "unparsed": 0
     }
    }
   }
  ],
- "aggregate = union|10x": [
+ "aggregate = first|1x": [
   {
-   "macro": 0.3167,
-   "unique": 0.25,
+   "macro": 0.2667,
+   "unique": 0.2,
    "ambiguous": 0.25,
-   "inconsistent": 0.45,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 5,
-     "ambiguous": 9,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
      "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "aggregate = first|3x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "aggregate = first|10x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "aggregate = union|1x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "aggregate = union|3x": [
+  {
+   "macro": 0.25,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.3,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 4,
+     "inconsistent": 11,
      "unparsed": 0
     },
     "ambiguous": {
      "unique": 0,
-     "ambiguous": 11,
-     "inconsistent": 9,
+     "ambiguous": 7,
+     "inconsistent": 13,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 0,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.2167,
+   "unique": 0.25,
+   "ambiguous": 0.2,
+   "inconsistent": 0.2,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 2,
+     "inconsistent": 13,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 0,
+     "ambiguous": 6,
+     "inconsistent": 14,
      "unparsed": 0
     },
     "inconsistent": {
@@ -1387,10 +1333,198 @@
    }
   },
   {
-   "macro": 0.35,
+   "macro": 0.25,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.25,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 2,
+     "inconsistent": 12,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 0,
+     "ambiguous": 6,
+     "inconsistent": 14,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 1,
+     "ambiguous": 1,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "aggregate = union|10x": [
+  {
+   "macro": 0.2,
+   "unique": 0.2,
+   "ambiguous": 0.2,
+   "inconsistent": 0.2,
+   "confusion": {
+    "unique": {
+     "unique": 4,
+     "ambiguous": 3,
+     "inconsistent": 13,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 0,
+     "ambiguous": 5,
+     "inconsistent": 15,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 1,
+     "ambiguous": 0,
+     "inconsistent": 19,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.1833,
+   "unique": 0.15,
+   "ambiguous": 0.2,
+   "inconsistent": 0.2,
+   "confusion": {
+    "unique": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 0,
+     "ambiguous": 6,
+     "inconsistent": 14,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 1,
+     "ambiguous": 1,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.1833,
+   "unique": 0.2,
+   "ambiguous": 0.15,
+   "inconsistent": 0.2,
+   "confusion": {
+    "unique": {
+     "unique": 4,
+     "ambiguous": 2,
+     "inconsistent": 14,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 0,
+     "ambiguous": 4,
+     "inconsistent": 16,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 1,
+     "ambiguous": 1,
+     "inconsistent": 18,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- line-level core|1x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.2,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 5,
+     "ambiguous": 7,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 2,
+     "ambiguous": 3,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
    "unique": 0.3,
    "ambiguous": 0.25,
-   "inconsistent": 0.5,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 12,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3167,
+   "unique": 0.3,
+   "ambiguous": 0.3,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 5,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 5,
+     "ambiguous": 3,
+     "inconsistent": 12,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- line-level core|3x": [
+  {
+   "macro": 0.2833,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 6,
@@ -1399,28 +1533,108 @@
      "unparsed": 0
     },
     "ambiguous": {
-     "unique": 0,
-     "ambiguous": 11,
-     "inconsistent": 9,
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
-     "unique": 2,
-     "ambiguous": 2,
+     "unique": 3,
+     "ambiguous": 4,
+     "inconsistent": 13,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.2833,
+   "unique": 0.3,
+   "ambiguous": 0.2,
+   "inconsistent": 0.35,
+   "confusion": {
+    "unique": {
+     "unique": 7,
+     "ambiguous": 6,
+     "inconsistent": 7,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 11,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 1,
      "inconsistent": 16,
      "unparsed": 0
     }
    }
   },
   {
-   "macro": 0.3333,
-   "unique": 0.2,
-   "ambiguous": 0.2,
-   "inconsistent": 0.6,
+   "macro": 0.2833,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
-     "unique": 4,
-     "ambiguous": 8,
+     "unique": 5,
+     "ambiguous": 6,
+     "inconsistent": 9,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 1,
+     "ambiguous": 13,
+     "inconsistent": 6,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  }
+ ],
+ "- line-level core|10x": [
+  {
+   "macro": 0.2667,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.3,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 6,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "ambiguous": {
+     "unique": 2,
+     "ambiguous": 10,
+     "inconsistent": 8,
+     "unparsed": 0
+    },
+    "inconsistent": {
+     "unique": 3,
+     "ambiguous": 2,
+     "inconsistent": 15,
+     "unparsed": 0
+    }
+   }
+  },
+  {
+   "macro": 0.3,
+   "unique": 0.25,
+   "ambiguous": 0.25,
+   "inconsistent": 0.4,
+   "confusion": {
+    "unique": {
+     "unique": 6,
+     "ambiguous": 6,
      "inconsistent": 8,
      "unparsed": 0
     },
@@ -1431,249 +1645,35 @@
      "unparsed": 0
     },
     "inconsistent": {
-     "unique": 0,
-     "ambiguous": 2,
-     "inconsistent": 18,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- line-level core|1x": [
-  {
-   "macro": 0.2833,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 5,
-     "ambiguous": 12,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
      "unique": 3,
-     "ambiguous": 3,
-     "inconsistent": 14,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3,
-   "unique": 0.2,
-   "ambiguous": 0.25,
-   "inconsistent": 0.45,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2667,
-   "unique": 0.25,
-   "ambiguous": 0.2,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 1,
-     "ambiguous": 9,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- line-level core|3x": [
-  {
-   "macro": 0.3167,
-   "unique": 0.3,
-   "ambiguous": 0.3,
-   "inconsistent": 0.35,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 0,
-     "ambiguous": 18,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 6,
-     "inconsistent": 10,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.2833,
-   "unique": 0.2,
-   "ambiguous": 0.15,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 15,
-     "inconsistent": 4,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 4,
-     "ambiguous": 3,
-     "inconsistent": 13,
+     "ambiguous": 1,
+     "inconsistent": 16,
      "unparsed": 0
     }
    }
   },
   {
    "macro": 0.3333,
-   "unique": 0.25,
+   "unique": 0.35,
    "ambiguous": 0.3,
-   "inconsistent": 0.45,
+   "inconsistent": 0.35,
    "confusion": {
     "unique": {
      "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
      "ambiguous": 5,
-     "inconsistent": 12,
-     "unparsed": 0
-    }
-   }
-  }
- ],
- "- line-level core|10x": [
-  {
-   "macro": 0.3167,
-   "unique": 0.3,
-   "ambiguous": 0.25,
-   "inconsistent": 0.4,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 12,
-     "inconsistent": 2,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "ambiguous": {
      "unique": 1,
-     "ambiguous": 17,
-     "inconsistent": 2,
+     "ambiguous": 11,
+     "inconsistent": 8,
      "unparsed": 0
     },
     "inconsistent": {
      "unique": 3,
-     "ambiguous": 6,
-     "inconsistent": 11,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.25,
-   "unique": 0.2,
-   "ambiguous": 0.05,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 6,
-     "ambiguous": 11,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 16,
-     "inconsistent": 3,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 5,
-     "ambiguous": 2,
-     "inconsistent": 13,
-     "unparsed": 0
-    }
-   }
-  },
-  {
-   "macro": 0.3333,
-   "unique": 0.25,
-   "ambiguous": 0.25,
-   "inconsistent": 0.5,
-   "confusion": {
-    "unique": {
-     "unique": 7,
-     "ambiguous": 11,
-     "inconsistent": 2,
-     "unparsed": 0
-    },
-    "ambiguous": {
-     "unique": 1,
-     "ambiguous": 18,
-     "inconsistent": 1,
-     "unparsed": 0
-    },
-    "inconsistent": {
-     "unique": 3,
-     "ambiguous": 4,
-     "inconsistent": 13,
+     "ambiguous": 1,
+     "inconsistent": 16,
      "unparsed": 0
     }
    }

@@ -47,7 +47,7 @@ MODEL = os.environ.get("MODEL", "ibm-granite/granite-4.2-8b")
 
 BUDGET_CAP = {"1x": 1, "3x": 3, "10x": 10}       # hard per-item ceiling
 SAMPLES = {"1x": 1, "3x": 3, "10x": 5}           # calls actually spent
-MAX_TOKENS = 800
+MAX_TOKENS = 1200
 TIMEOUT_S = 60
 
 
@@ -121,75 +121,94 @@ class HttpModelClient:
 # --------------------------------------------------------------------------- #
 # Prompt
 # --------------------------------------------------------------------------- #
-FEW_SHOT = """Example
-Header: "Shift notes, Bay 1. 5 staff on the rota: Alice, Bob, Charlie, David, Eve. Blocks run 07:00, 09:00, 11:00, 13:00, 15:00. Stations: intake, calibration, packing (Alice, Bob, Eve)."
+FEW_SHOT = """Example:
+Header: "Shift roster, Unit A. 5 staff on duty: Alex, Brooke, Connor, Diana, Ethan. Blocks run 08:00, 10:00, 12:00, 14:00, 16:00. Stations: assembly, testing, dispatch (Alex, Brooke, Ethan)."
 Notes:
-1: Deliveries continue to arrive through north gate.
-2: Alice is not on calibration.
-3: Bob takes 11:00, as things stand.
-4: Charlie lobbied for 07:00 without success.
-5: Eve is on the block directly after Alice.
-6: Whoever is on packing works earlier in the day than David.
-7: Whichever way round Bob and Eve are, Charlie is between them.
-8: Alice then Bob, back to back.
-9: Calibration is covered earlier in the day than Eve's block.
-10: In the old arrangement, Alice took packing.
-11: Alice is confirmed on intake.
-12: David is done before Eve starts.
-13: Charlie works earlier than whoever has packing.
-14: There is no block between Bob's and Charlie's, in that order.
-15: Nothing was minuted about David.
+1: Routine maintenance was completed yesterday.
+2: Alex is not assigned to testing.
+3: Brooke is scheduled for the 12:00 block.
+4: Connor cannot work the 08:00 block.
+5: Diana's shift comes immediately after Ethan's.
+6: The person on assembly finishes before Connor starts.
+7: Regardless of the order of Brooke and Diana, Alex works between them.
+8: Ethan is followed directly by Brooke.
+9: Testing is scheduled earlier in the day than Alex's block.
+10: The break room coffee maker was replaced.
+11: Alex is confirmed on dispatch.
+12: Diana works earlier in the day than Ethan.
+13: Connor finishes before whichever staff member has assembly.
+14: Fire extinguishers were inspected this morning.
 
 Output:
 [
-  {"line_no": 2, "type": "not_station", "person": "Alice", "station": "calibration"},
-  {"line_no": 3, "type": "assign_block", "person": "Bob", "block": "11:00"},
-  {"line_no": 4, "type": "not_block", "person": "Charlie", "block": "07:00"},
-  {"line_no": 5, "type": "direct_after", "person1": "Eve", "person2": "Alice"},
-  {"line_no": 6, "type": "station_before_person", "station": "packing", "person": "David"},
-  {"line_no": 7, "type": "between", "person": "Charlie", "person1": "Bob", "person2": "Eve"},
-  {"line_no": 8, "type": "direct_after", "person1": "Bob", "person2": "Alice"},
-  {"line_no": 9, "type": "station_before_person", "station": "calibration", "person": "Eve"},
-  {"line_no": 11, "type": "assign_station", "person": "Alice", "station": "intake"},
-  {"line_no": 12, "type": "before_person", "person1": "David", "person2": "Eve"},
-  {"line_no": 13, "type": "person_before_station", "person": "Charlie", "station": "packing"},
-  {"line_no": 14, "type": "direct_after", "person1": "Charlie", "person2": "Bob"}
+  {"line_no": 1, "type": "NONE"},
+  {"line_no": 2, "type": "not_station", "person": "Alex", "station": "testing"},
+  {"line_no": 3, "type": "assign_block", "person": "Brooke", "block": "12:00"},
+  {"line_no": 4, "type": "not_block", "person": "Connor", "block": "08:00"},
+  {"line_no": 5, "type": "direct_after", "person1": "Diana", "person2": "Ethan"},
+  {"line_no": 6, "type": "station_before_person", "station": "assembly", "person": "Connor"},
+  {"line_no": 7, "type": "between", "person": "Alex", "person1": "Brooke", "person2": "Diana"},
+  {"line_no": 8, "type": "direct_after", "person1": "Brooke", "person2": "Ethan"},
+  {"line_no": 9, "type": "station_before_person", "station": "testing", "person": "Alex"},
+  {"line_no": 10, "type": "NONE"},
+  {"line_no": 11, "type": "assign_station", "person": "Alex", "station": "dispatch"},
+  {"line_no": 12, "type": "before_person", "person1": "Diana", "person2": "Ethan"},
+  {"line_no": 13, "type": "person_before_station", "person": "Connor", "station": "assembly"},
+  {"line_no": 14, "type": "NONE"}
 ]"""
 
-TYPES_DOC = """Relation types and their slots:
-- assign_block {person, block}: person works that block (e.g. "takes HH:MM", "opens up at HH:MM", "covers HH:MM", "is on HH:MM").
-- not_block {person, block}: person does NOT work that block (e.g. "unavailable at HH:MM", "lobbied for HH:MM without success", "wanted HH:MM and did not get it", "definitely not HH:MM", "rules out HH:MM").
-- assign_station {person, station}: person is assigned to that station.
-- not_station {person, station}: person is NOT assigned to that station ("someone other than", "has not been put on", "not assigned to").
-- before_person {person1, person2}: person1 works earlier in the day than person2 (person1 < person2, e.g. "person1 is done before person2 starts", "person1 works earlier than person2", "person1 precedes person2", "person2 comes later than person1", "person1 falls somewhere earlier than person2"). Both slots MUST be persons from staff!
-- direct_after {person1, person2}: person1 works immediately after person2 (person1 = person2 + 1 block, e.g. "person1 is on the block directly after person2", "person2 then person1, back to back", "person2 hands straight over to person1", "person1 relieves person2", "there is no block between person2 and person1, in that order"). person1 is the later person, person2 is the earlier person!
-- between {person, person1, person2}: person works between person1 and person2 in either order (e.g. "person sits between person1 and person2", "person's block falls between person1's and person2's", "whichever way round person1 and person2 are, person is between them", "person is on after one of person1 and person2 and before the other", "person works at some point between person1 and person2, though not necessarily adjacent to either"). 'person' is the middle person; 'person1' and 'person2' are the outer two persons.
-- station_before_person {station, person}: whoever is on station works earlier in the day than person (or person works later than whoever is on station).
-- person_before_station {person, station}: person works earlier in the day than whoever is on station (or whoever is on station works later than person)."""
+TYPES_DOC = """Relation types and required slots:
+- assign_block {person, block}: person is scheduled for or allocated to work that specific time block.
+- not_block {person, block}: person does not, cannot, or is excluded from working that time block.
+- assign_station {person, station}: person is assigned to or covers that station.
+- not_station {person, station}: person does not cover that station, or someone else covers it.
+- before_person {person1, person2}: person1's shift is earlier in the day than person2's shift (person1 < person2). Both slots must be staff names.
+- direct_after {person1, person2}: person1's block is immediately after person2's with no gap between them (person1 = person2 + 1 block). person1 is the later person, person2 is the earlier person.
+- between {person, person1, person2}: person works at some point in time between person1 and person2, in either order (person1 < person < person2 OR person2 < person < person1). 'person' is the middle person; 'person1' and 'person2' are the two boundary persons.
+- station_before_person {station, person}: whichever staff member is assigned to that station works earlier in the day than person.
+- person_before_station {person, station}: person works earlier in the day than whichever staff member is assigned to that station."""
 
 
 def build_prompt(header, body_lines):
     notes = "\n".join(f"{i + 1}: {l}" for i, l in enumerate(body_lines))
     return (
-        "You turn facility shift notes into formal scheduling constraints.\n\n"
+        "You analyze facility shift notes to extract formal scheduling constraints.\n\n"
         f"{TYPES_DOC}\n\n{FEW_SHOT}\n\n"
-        "Rules:\n"
-        "1. Output ONLY a valid JSON array of objects. One object per scheduling statement (a line may contain more than one).\n"
-        "2. line_no MUST be the integer line number shown before the colon.\n"
-        "3. Every slot must use the exact names, station words, or HH:MM times from that line:\n"
-        "   - 'person', 'person1', 'person2' MUST be actual names from the staff list. Never put placeholder strings (like 'one_of', 'someone', 'null') or station names in person slots.\n"
-        "   - 'station' MUST be a station name from the stations list.\n"
-        "   - 'block' MUST be an HH:MM time from the blocks list.\n"
-        "4. If a statement compares two staff members (e.g., 'X is done before Y starts'), use before_person or direct_after, NEVER person_before_station!\n"
-        "5. Hedges ('as far as I know', 'speaking from memory', 'going off the roster', 'it bears repeating', 'my recollection is', 'worth restating') do not weaken a statement; extract it in full.\n"
-        "6. Skip lines that are office chatter, breaks, deliveries, walkarounds, fire drills, past arrangements ('in the old arrangement', 'last month'), or hypotheticals ('would have been').\n"
+        "Instructions:\n"
+        f"1. For every numbered note line from 1 to {len(body_lines)}, output a verdict object in a single JSON array.\n"
+        "2. If a line expresses no scheduling constraint (e.g. background chatter, past history, hypotheticals, facilities, or notes with no scheduling effect), output: {\"line_no\": <number>, \"type\": \"NONE\"}.\n"
+        "3. If a line expresses a scheduling constraint, output: {\"line_no\": <number>, \"type\": \"<relation_type>\", ...slots}.\n"
+        "4. Slot grounding:\n"
+        "   - 'person', 'person1', 'person2' MUST be exact names of staff members appearing in that line. Never use pronouns, titles, or placeholder tokens.\n"
+        "   - 'station' MUST be a station name from the stations list appearing in that line.\n"
+        "   - 'block' MUST be an HH:MM time appearing in that line.\n"
+        "5. Conversational hedges ('as far as I know', 'if memory serves', 'to reiterate', 'I believe') do not reduce confidence; extract the underlying constraint in full.\n"
+        "6. When comparing two staff members in time, use before_person or direct_after, never person_before_station.\n\n"
         f'Header: "{header}"\nNotes:\n{notes}\n\nOutput:'
     )
+
 
 
 # --------------------------------------------------------------------------- #
 # Parsing a model response
 # --------------------------------------------------------------------------- #
+def _clean_obj(d):
+    if not isinstance(d, dict):
+        return None
+    out = dict(d)
+    if "slots" in out:
+        sv = out.pop("slots")
+        if isinstance(sv, dict):
+            for k, v in sv.items():
+                out.setdefault(k, v)
+        elif isinstance(sv, list) and sv and isinstance(sv[0], dict):
+            for k, v in sv[0].items():
+                out.setdefault(k, v)
+    if "name" in out and "person" not in out:
+        out["person"] = out["name"]
+    return out
+
+
 def parse_model_json(raw):
     """Return a list of dicts, or None if nothing usable could be recovered."""
     if raw is None:
@@ -201,7 +220,8 @@ def parse_model_json(raw):
         try:
             data = json.loads(text[lo:hi + 1])
             if isinstance(data, list):
-                return [d for d in data if isinstance(d, dict)]
+                res = [_clean_obj(d) for d in data if isinstance(d, dict)]
+                return [d for d in res if d]
         except Exception:
             pass
     # Truncated / slightly malformed array: salvage whole objects.
@@ -211,7 +231,9 @@ def parse_model_json(raw):
         try:
             d = json.loads(clean_m)
             if isinstance(d, dict):
-                objs.append(d)
+                cleaned = _clean_obj(d)
+                if cleaned:
+                    objs.append(cleaned)
         except Exception:
             continue
     return objs if objs else None
@@ -258,6 +280,10 @@ def interpret_sample(raw, ctx, cfg):
     per_line, by_key = {}, {}
     stats = Counter()
     for obj in objs:
+        ctype = str(obj.get("type", "")).strip().lower()
+        if ctype in ("none", "null", ""):
+            stats["none_lines"] += 1
+            continue
         c, why = validate_model_constraint(obj, ctx, ground=cfg.grounding)
         if c is None and why == "slots" and cfg.regex_repair:
             c = regex_repair(obj, ctx)
@@ -274,6 +300,7 @@ def interpret_sample(raw, ctx, cfg):
         per_line.setdefault(c["line_no"], set()).add(k)
         stats["accepted"] += 1
     return {ln: frozenset(ks) for ln, ks in per_line.items()}, by_key, stats
+
 
 
 def aggregate(interps, cfg):

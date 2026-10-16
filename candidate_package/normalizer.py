@@ -302,8 +302,11 @@ def validate_model_constraint(obj, ctx, ground=True):
     if not isinstance(obj, dict):
         return None, "shape"
     ctype = str(obj.get("type", "")).strip().lower()
+    if ctype in ("none", "null", ""):
+        return None, "none"
     if ctype not in SCHEMA:
         return None, "shape"
+
     try:
         line_no = int(obj.get("line_no"))
     except (TypeError, ValueError):
