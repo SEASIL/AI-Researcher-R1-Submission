@@ -1,0 +1,11 @@
+.env
+**/.env
+.venv/
+__pycache__/
+**/__pycache__/
+ablation_cache/
+*.trace.json
+results/
+*.pyc
+*.pyo
+*.log

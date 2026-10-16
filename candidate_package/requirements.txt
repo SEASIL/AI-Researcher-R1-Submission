@@ -1,0 +1,3 @@
+# Python 3.11 or newer (developed and tested on 3.12.3)
+requests==2.31.0
+python-dotenv==1.0.1

@@ -1,0 +1,21 @@
+#!/usr/bin/env python3
+import sys
+import os
+import argparse
+
+# Ensure current directory is on sys.path
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+from pipeline import run_pipeline
+
+def main():
+    parser = argparse.ArgumentParser(description="Launcher for Take-Home Scheduling Architecture")
+    parser.add_argument("items", help="Path to items.json")
+    parser.add_argument("--budget", choices=["1x", "3x", "10x"], default="1x", help="Model call budget per item")
+    parser.add_argument("--out", required=True, help="Path to output answers.json")
+
+    args = parser.parse_args()
+    run_pipeline(args.items, args.budget, args.out)
+
+if __name__ == "__main__":
+    main()
