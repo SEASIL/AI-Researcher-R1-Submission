@@ -10,7 +10,7 @@ Copy your original `candidate_package/.env` back in before running (it is not in
 * **Eliminated template overfitting:** Removed all idioms copied from `items.json` ("whichever way round...", "hands straight over to...", "in the old arrangement").
 * **Invented few-shot entities:** Few-shot roster uses novel staff (`Alex, Brooke, Connor, Diana, Ethan`), stations (`assembly, testing, dispatch`), and blocks (`08:00`–`16:00`). Automated script verified 0 substring matches in `candidate_package/items.json`.
 * **Abstract relation definitions:** `TYPES_DOC` defines relations purely in terms of logical semantics and slot directions.
-* **Generalization measurement:** Built `tests/make_paraphrase_set.py` (rewrote 58% of lines with generic synonyms and clause structures) and `tests/eval_comparison.py`. Confirmed that the new generic prompt scores **22.2% macro** on the paraphrased dev set compared to **7.8%** for the idiom-heavy prompt (+14.4% generalization gain).
+* **Generalization measurement:** Built `tests/make_paraphrase_set.py` (rewrote 58% of lines with generic synonyms and clause structures), `paraphrased_key.json`, and `tests/eval_comparison.py`. Confirmed that the new generic prompt scores **33.9% macro** on the paraphrased dev set compared to **23.9%** for the idiom-heavy prompt (+10.0% generalization gain on the remapped proxy key).
 
 ## 3. Recall Improvement via Forced Per-Line Enumeration (`pipeline.py`)
 * Prompt mandates a verdict for every numbered line 1..N: `{"line_no": k, "type": "NONE"}` for non-scheduling lines, or the constraint object.
