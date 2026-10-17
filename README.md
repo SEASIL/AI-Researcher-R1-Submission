@@ -26,7 +26,7 @@ Our architecture restricts the model strictly to local extraction, offloading co
 1. **Model Extraction (Sole Model Use):** The model processes lines 1..N and returns a single JSON array classifying each line as `NONE` or mapping it to one of nine relation schemas. Forcing explicit verdicts across all lines cuts missed constraints; hedges carry full semantic force.
 2. **Grounding Verification:** Constraint proposals are dropped unless all names, stations, and times appear verbatim in the cited line. This converts temperature-1.0 hallucinations into dropped constraints.
 3. **Regex Slot Repair (Narrow Fallback):** If slot names fail verbatim grounding but a strict regex matches the identical relation type on that line, regex slots repair the proposal while keeping the model's semantic verdict binding.
-4. **Per-Line Plurality Voting (3x, 10x):** Multi-sample budgets vote per line; plurality wins. Non-scheduling verdicts skip votes, preventing over-constraint from additive union.
+4. **Per-Line Plurality Voting (3x, 10x):** Multi-sample budgets vote per line; plurality wins. A NONE verdict counts as a vote for no constraint; ties go to the extracted constraint.
 5. **Exhaustive Constraint Solver:** Filters all 720 candidate schedules: 1 remaining → `unique`, 2–4 → `ambiguous` (returning all), 0 → `inconsistent`.
 6. **Line-Level Conflict Minimizer:** Iteratively drops statements one-by-one to extract a minimal contradictory subset, quoted whole and verbatim.
 7. **Budget Ledger & Verification:** Calls are pre-reserved in a thread-safe `CallLedger` before dispatch and never retried; exceeding the cap raises `BudgetExceeded`. 21 offline unit tests (17 in `test_pipeline`, 4 in `test_generalization`) verify plumbing, budget ledger enforcement, and mechanics without network calls, saying nothing about Granite's extraction quality.
@@ -46,11 +46,11 @@ Each arm deterministically replays identical paired model samples. Detailed per-
 | model output blanked | 0.0% (0%-0%) | 0.0% (0%-0%) | 0.0% (0%-0%) |
 | symbolic only (no model) | 71.7% | - | - |
 
-Differences between `full`, `first sample`, and `union` are within run-to-run noise on 60 items (3 runs); I do not claim voting beats either. Additive union scores lower at 10x (18.9%) as accumulated proposals over-constrain the solver, while plurality voting maintains consistency with 1x (30.0%). Removing grounding or adding distractor filters yields minor shifts within sample noise on 60 items. Blanking model output collapses performance to 0.0%, confirming strict model dependence.
+`full` and `first sample` are within run-to-run noise on 60 items; I do not claim voting beats a single sample. Union is the least stable arm: 18.9% at 10x in this 3-run set, but highest at 10x (33.3%) in an earlier independent 3-run set with the same code and different draws. I treat 'additive union over-constrains the solver' as a hypothesis, not a finding. Removing grounding or adding the distractor filter shifts scores within noise. Blanking model output gives 0.0%, so answers depend on the model.
 
 ## 4. What Was Built and Removed
 - **Regex Re-Derivation of Constraints:** Bypassed model extraction and collapsed on phrasing shifts; removed to ensure the model genuinely performs extraction.
-- **Additive Union Across Multi-Sample Draws:** Dropped because accumulated noisy proposals across draws tend to over-constrain the solver into false contradictions (18.9% at 10x).
+- **Additive Union Across Multi-Sample Draws:** Dropped because accumulated noisy proposals across draws tend to over-constrain the solver into false contradictions (18.9% at 10x in one 3-run set; unstable across runs, so a hypothesis).
 - **HTTP Retry Loops:** Removed to guarantee strict budget ledger adherence; failed calls consume their reserved budget slot without retrying.
 - **Hand-Written Distractor List:** Excluded from the default pipeline (`+ distractor filter` arm) because fixed phrase lists overfit to the visible prompt distribution.
 
@@ -58,7 +58,7 @@ Differences between `full`, `first sample`, and `union` are within run-to-run no
 Extraction is **model-based**: Granite's emitted relation types and slots directly determine solver constraints. Symbolic code handles header parsing, grounding validation, schedule search, and minimal conflict isolation.
 
 **Generalization & Author Variance:**
-To evaluate sensitivity beyond the 60 visible items, we benchmarked on a proxy dev set (`paraphrased_items.json`, 58% of clue lines rewritten with rule-based synonyms) scored against a remapped citation key (`paraphrased_key.json`). On this proxy set, the template regex baseline falls from **71.7% to 21.7%**, whereas our model architecture scores **33.9% macro** at 1x (recovering ambiguous items compared to 23.9% under idiom-heavy prompting). This benchmark demonstrates robustness to mild synonym rewrites, not generalization to a different author, phrasing pool, or structural template; real performance on unseen problem logic remains unknown (see [EXPERIMENTS.md](EXPERIMENTS.md)).
+To evaluate sensitivity beyond the 60 visible items, we benchmarked on a proxy dev set (`paraphrased_items.json`, 58% of clue lines rewritten with rule-based synonyms) scored against a remapped citation key (`paraphrased_key.json`). On this proxy set, the template regex baseline falls from **71.7% to 21.7%**, whereas our model architecture scores **33.9% macro** at 1x. This benchmark demonstrates robustness to mild synonym rewrites, not generalization to a different author, phrasing pool, or structural template; real performance on unseen problem logic remains unknown (see [EXPERIMENTS.md](EXPERIMENTS.md)).
 
 *Brittleness Points:* (a) A closed 9-relation schema cannot represent non-standard constraints ("at least two blocks apart", disjunctions). (b) Grounding requires exact verbatim tokens, failing on pronouns, nicknames, or colloquial timestamps. (c) Plurality voting cannot correct correlated misreadings across draws.
 
