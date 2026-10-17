@@ -1,3 +1,9 @@
+* text=auto
+run text eol=lf
+candidate_package/run text eol=lf
+*.py text eol=lf
+*.bat text eol=crlf
+
 PROGRESS.md export-ignore
 CHANGES.md export-ignore
 ablation_results.json export-ignore
