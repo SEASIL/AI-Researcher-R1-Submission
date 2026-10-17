@@ -62,7 +62,50 @@
   - **Symbolic floor**: 71.7% macro
   - **Model output blanked**: 0.0% (verifies 100% model dependency)
 - **Key Empirical Insights**:
-  1. **Recall vs. Precision Trade-off:** True `unique` declared `ambiguous` dropped from 34/60 down to 17/60 at 1x. While forced per-line enumeration cut missed constraints in half, errors shifted to precision: true-unique declared inconsistent rose from 9 to 24, and true-ambiguous declared inconsistent rose from 6 to 21 (45 of 120 unique or ambiguous items are now falsely declared inconsistent, up from 15 of 120). Forcing a verdict on every line compels the model to extract spurious constraints from noise lines, making precision an equal bottleneck alongside recall.
+  1. **Recall vs. Precision Trade-off:** True `unique` declared `ambiguous` dropped from 34/60 down to 17/60 at 1x. While forced per-line enumeration cut missed constraints in half, errors shifted to precision: true-unique declared inconsistent rose from 9 to 24, and true-ambiguous declared inconsistent rose from 6 to 21 (45 of 120 unique or ambiguous items are now falsely declared inconsistent, up from 15 of 120). A plausible hypothesis—though not yet checked against per-line traces—is that forcing the model to evaluate every line compels it to pull spurious constraints out of noise lines, alongside flipped relational directions; extraction precision is thus as limiting a bottleneck as recall.
   2. **Flat Scaling Curve & Voting vs. First-Sample vs. Union:** The 1x/3x/10x scaling curve is flat (~30/28/30); repeated sampling does not help macro score. At 3x, plurality voting scores 28.3% while the first sample alone scores 30.0%; at 10x, both tie at 30.0%. Voting is therefore not shown to beat using the first sample alone, only to avoid union's severe degradation (collapsing to 23.9% at 3x and 18.9% at 10x as accumulated noisy constraints over-constrain items). Furthermore, regex slot repair and the line-level conflict filter score identically to `full` across all budgets, removing grounding does not reduce score (30.6% at 1x), and adding the distractor filter does not hurt (30.6% at 1x), showing these component differences fall within run noise on 60 items.
   3. **Honest assessment:** Stated plainly, the system scores ~30% macro across budgets, remaining far below the 71.7% visible symbolic floor and the 67.5% frontier reference. While the regex floor of 71.7% is a lower bound on what the solver can do with correct constraints, 8B model extraction precision (false constraints on noise lines, flipped directions) and recall (omitting constraints) are equally limiting bottlenecks.
+
+### Per-Kind Breakdown for `full` Architecture (Mean over 3 Runs, Visible Set)
+
+| Budget | unique | ambiguous | inconsistent | Macro Exact Match |
+| :--- | :--- | :--- | :--- | :--- |
+| 1x | 26.7% (20%-30%) | 26.7% (25%-30%) | 36.7% (35%-40%) | 30.0% (27%-32%) |
+| 3x | 28.3% (25%-30%) | 21.7% (20%-25%) | 35.0% (35%-35%) | 28.3% (28%-28%) |
+| 10x | 28.3% (25%-35%) | 26.7% (25%-30%) | 35.0% (30%-40%) | 30.0% (27%-33%) |
+
+### Confusion Matrices: Declared Kind (Columns) vs True Kind (Rows)
+Summed across 3 runs (180 evaluations total per budget level):
+
+**1x Budget:**
+| True \ Declared | unique | ambiguous | inconsistent | unparsed |
+| :--- | :--- | :--- | :--- | :--- |
+| unique | 19 | 17 | 24 | 0 |
+| ambiguous | 3 | 36 | 21 | 0 |
+| inconsistent | 10 | 8 | 42 | 0 |
+
+**3x Budget:**
+| True \ Declared | unique | ambiguous | inconsistent | unparsed |
+| :--- | :--- | :--- | :--- | :--- |
+| unique | 18 | 19 | 23 | 0 |
+| ambiguous | 4 | 34 | 22 | 0 |
+| inconsistent | 9 | 7 | 44 | 0 |
+
+**10x Budget:**
+| True \ Declared | unique | ambiguous | inconsistent | unparsed |
+| :--- | :--- | :--- | :--- | :--- |
+| unique | 19 | 17 | 24 | 0 |
+| ambiguous | 4 | 31 | 25 | 0 |
+| inconsistent | 9 | 4 | 47 | 0 |
+
+### Prompt Comparison: Visible Set vs Paraphrased Proxy Dev Set (1x Budget, 3 Runs)
+
+| Dataset | Prompt | Macro Mean (Range) | unique | ambiguous | inconsistent |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **Visible Set** (`items.json`) | Old (template idioms) | 28.3% (26.7%-30.0%) | 23.3% | 21.7% | 40.0% |
+| **Visible Set** (`items.json`) | New (generic + forced enum) | 30.0% (26.7%-31.7%) | 26.7% | 26.7% | 36.7% |
+| **Proxy Dev Set** (`paraphrased_items.json`) | Old (template idioms) | 23.9% (21.7%-26.7%) | 16.7% | 6.7% | 48.3% |
+| **Proxy Dev Set** (`paraphrased_items.json`) | New (generic + forced enum) | 33.9% (33.3%-35.0%) | 33.3% | 30.0% | 38.3% |
+| **Symbolic Baseline** (Regex only, no model) | Visible Set | 71.7% (fixed) | 80.0% | 75.0% | 60.0% |
+| **Symbolic Baseline** (Regex only, no model) | Proxy Dev Set | 21.7% (fixed) | 30.0% | 25.0% | 10.0% |
 
