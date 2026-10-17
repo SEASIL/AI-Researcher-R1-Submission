@@ -11,6 +11,7 @@ python -m unittest tests.test_pipeline  # 17 offline tests: mechanics, budget le
 python -m unittest discover tests       # 21 offline tests: full test suite (NO network calls)
 ```
 *Note: If `./run` gives `Permission denied`, use `python run <items.json> --budget 1x --out answers.json` or `chmod +x run`. `run_ablations.py --reuse` requires `ablation_cache/`, which is populated after a live run and omitted from the ZIP archive.*
+*`answers/` holds the answers from the final live runs (one run per budget, scored 31.7% / 30.0% / 30.0%).*
 
 ---
 
